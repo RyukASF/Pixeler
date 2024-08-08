@@ -20,11 +20,11 @@ while True:
             y.append(condY)
 
             if len(x) == 32 and len(y) == 32:
-                playsound.playsound("ding.mp3")
+                playsound.playsound("audio/ding.mp3")
                 printValues()
                 exit()
 
-            playsound.playsound("pop.wav")
+            playsound.playsound("audio/pop.wav")
             Thing = True
             time.sleep(0.1)
             thing = False
