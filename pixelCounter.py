@@ -8,8 +8,11 @@ thing = False
 x = []
 y = []
 
-print("Press F to add Mouse Coordinates to the List")
+print("\nPress F to add Mouse Coordinates to the List")
 print("Cooldown for each press is 0.1s \n")
+print("Press T to to add Color Button Coordinates to the List")
+print("Press Y to add Input area Coordinates to the List")
+print("Press U to add Close Button Coordinates to the List \n")
 
 
 def printValues():
@@ -28,7 +31,7 @@ while True:
 
     if keyboard.is_pressed("f"):
         if (thing == False):
-            cordX, condY = pyautogui.position()
+            cordX, cordY = pyautogui.position()
             if len(x) != 32:
                 x.append(cordX)
                 playsound.playsound("audio/xpop.wav")
@@ -38,13 +41,34 @@ while True:
                 thing = False
 
             elif len(x) == 32 and len(y) != 32:
-                y.append(condY)
+                y.append(cordY)
                 playsound.playsound("audio/ypop.wav")
                 printPercentage()
-                Thing = True
-                time.sleep(0.1)
-                thing = False
                 if len(x) == 32 and len(y) == 32:
                     playsound.playsound("audio/ding.mp3")
                     printValues()
                     exit()
+                Thing = True
+                time.sleep(0.1)
+                thing = False
+
+    elif keyboard.is_pressed("t"):
+        if (thing == False):
+            cordX, cordY = pyautogui.position()
+            colorButton = cordX, cordY
+            print(colorButton)
+            playsound.playsound("audio/ypop.wav")
+
+    elif keyboard.is_pressed("y"):
+        if (thing == False):
+            cordX, cordY = pyautogui.position()
+            inputArea = cordX, cordY
+            print(inputArea)
+            playsound.playsound("audio/ypop.wav")
+
+    elif keyboard.is_pressed("u"):
+        if (thing == False):
+            cordX, cordY = pyautogui.position()
+            closeButton = cordX, cordY
+            print(closeButton)
+            playsound.playsound("audio/ypop.wav")
