@@ -18,6 +18,11 @@ y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 
 
 print("resolution:", len(x), "x", len(y))
 
+# The Speed of drawing image Ingame is as fast as it can be.
+# Faster speed might cause game to not detect any inputs.
+
+# You can change this value to make it faster or slower. AT YOUR OWN RISK
+
 
 def process_image():
     global pIndex
