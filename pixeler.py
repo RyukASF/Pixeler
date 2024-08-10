@@ -5,10 +5,16 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image
 from colorama import Fore, Back, Style
+import playsound
 
 pIndex = 0
 pixels = []
 canItRun = False
+
+# Set Button coordinates //CHANGE THIS COORDINATES WITH YOUR COORDINATES (By using PixelCounter.py)
+colorCord = 1093, 863
+inputCord = 1087, 761
+closeCord = 1345, 471
 
 # Set x and y coordinates //CHANGE THIS COORDINATES WITH YOUR COORDINATES (By using PixelCounter.py)
 x = [646, 663, 686, 704, 723, 748, 765, 788, 804, 829, 845, 868, 889, 908, 931, 951, 969,
@@ -16,12 +22,22 @@ x = [646, 663, 686, 704, 723, 748, 765, 788, 804, 829, 845, 868, 889, 908, 931, 
 y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 470,
      489, 509, 529, 552, 572, 586, 607, 632, 648, 669, 688, 710, 732, 755, 769, 793]
 
+# This is to make sure that amount of coordinates are correct
 print("resolution:", len(x), "x", len(y))
 
-# The Speed of drawing image Ingame is as fast as it can be.
-# Faster speed might cause game to not detect any inputs.
+cY, cX = colorCord
+iY, iX = inputCord
+clY, clX = closeCord
 
-# You can change this value to make it faster or slower. AT YOUR OWN RISK
+
+# This Functions makes sure that it can run smooth without any problems based on Your FPS
+def calculate_f_sleep_time(fps):
+    frame_time = 1 / fps
+
+    # We'll use a slightly longer sleep time to ensure the game registers the input
+    f_sleep_time = frame_time * 1.2
+
+    return f_sleep_time
 
 
 def process_image():
@@ -63,45 +79,58 @@ def select_color():
 
     if pIndex >= 1024:
         canItRun = False
+        playsound("audio.ding.mp3")
     else:
-        autoit.mouse_move(1093, 863)
+        autoit.mouse_move(cY, cX, 0)
+        time.sleep(f_sleep_time)
+        autoit.mouse_move(cY+1, cX+1, 0)
+        time.sleep(0.005)
+        autoit.mouse_move(cY-1, cX-1, 0)
+        time.sleep(f_sleep_time)
         autoit.mouse_click()
-        time.sleep(0.2)
 
-        autoit.mouse_move(1087, 761)
+        autoit.mouse_move(iY, iX, 0)
+        time.sleep(f_sleep_time)
+        autoit.mouse_move(iY+1, iX+1, 0)
+        time.sleep(0.005)
+        autoit.mouse_move(iY-1, iX-1, 0)
+        time.sleep(f_sleep_time)
         autoit.mouse_click()
 
         keyboard.write(pixels[pIndex])
 
         pIndex += 1
 
-        autoit.mouse_move(1345, 471)
+        autoit.mouse_move(clY, clX, 0)
+        time.sleep(f_sleep_time)
+        autoit.mouse_move(clY+1, clX+1, 0)
+        time.sleep(0.005)
+        autoit.mouse_move(clY-1, clX-1, 0)
+        time.sleep(f_sleep_time)
         autoit.mouse_click()
-        time.sleep(0.1)
 
 
 def on_press():
     key = 'f'
     if key == 'f':
-        for i in range(len(x)):
-            if canItRun == True:
-                select_color()
-                autoit.mouse_move(x[i], y[0])
-                autoit.mouse_click()
-                time.sleep(0.1)
-
-                if keyboard.is_pressed("g"):
-                    on_release()
-                    break
-
-        for j in range(len(y) - 1):
+        autoit.mouse_click()
+        for j in range(len(y)):
             for i in range(len(x)):
                 if canItRun == True:
-                    keyboard.add_hotkey('g', on_release)
                     select_color()
-                    autoit.mouse_move(x[i], y[j + 1])
+                    # This many inputs is because roblox sucks
+                    autoit.mouse_move(x[i], y[j], 0)
+                    time.sleep(0.001)
                     autoit.mouse_click()
-                    time.sleep(0.1)
+                    autoit.mouse_move(x[i]+1, y[j]+1, 0)
+                    time.sleep(0.001)
+                    autoit.mouse_click()
+                    autoit.mouse_move(x[i]-1, y[j]-1, 0)
+                    time.sleep(0.001)
+                    autoit.mouse_click()
+                    autoit.mouse_move(x[i], y[j], 0)
+                    time.sleep(f_sleep_time)
+                    autoit.mouse_click()
 
                     if keyboard.is_pressed("g"):
                         on_release()
@@ -115,6 +144,12 @@ def on_release():
         canItRun = False
 
 
+fps = int(input("Enter your Roblox Average FPS: "))
+f_sleep_time = calculate_f_sleep_time(fps)
+
+print(f"Optimal delay is: {f_sleep_time:.4f} seconds")
+
+
 print(Style.RESET_ALL)
 print(Back.LIGHTBLACK_EX)
 print("Press H To Select Image")
@@ -124,4 +159,5 @@ print("Press G To Stop Drawing", Style.RESET_ALL)
 # Listen for hotkeys
 keyboard.add_hotkey('f', on_press)
 keyboard.add_hotkey('h', process_image)
+keyboard.add_hotkey('g', on_release)
 keyboard.wait()

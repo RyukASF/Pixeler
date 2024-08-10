@@ -10,9 +10,9 @@ y = []
 
 print("\nPress F to add Mouse Coordinates to the List")
 print("Cooldown for each press is 0.1s \n")
-print("Press T to to add Color Button Coordinates to the List")
-print("Press Y to add Input area Coordinates to the List")
-print("Press U to add Close Button Coordinates to the List \n")
+print("Press |T| to to add Color Button Coordinates to the List")
+print("Press |Y| to add Input area Coordinates to the List")
+print("Press |U| to add Close Button Coordinates to the List \n")
 
 
 def printValues():
@@ -56,19 +56,19 @@ while True:
         if (thing == False):
             cordX, cordY = pyautogui.position()
             colorButton = cordX, cordY
-            print(colorButton)
+            print("Colour Select Button: ", colorButton)
             playsound.playsound("audio/ypop.wav")
 
     elif keyboard.is_pressed("y"):
         if (thing == False):
             cordX, cordY = pyautogui.position()
             inputArea = cordX, cordY
-            print(inputArea)
+            print("Input Text Area: ", inputArea)
             playsound.playsound("audio/ypop.wav")
 
     elif keyboard.is_pressed("u"):
         if (thing == False):
             cordX, cordY = pyautogui.position()
             closeButton = cordX, cordY
-            print(closeButton)
+            print("Close Button: ", closeButton)
             playsound.playsound("audio/ypop.wav")
