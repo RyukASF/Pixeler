@@ -8,6 +8,7 @@ First, You need to have [Python](https://www.python.org) Installed, Download it 
 
 Downlaod .Zip file from GitHub, or from [Here](https://github.com/RyukASF/Pixeler/archive/refs/heads/main.zip)
 and extract it.
+
 ![screenshot1](https://cdn.discordapp.com/attachments/842094820867571762/1272249865900134537/image.png?ex=66ba4a85&is=66b8f905&hm=d3818cea1b55e2e054d9c38c1fd13e49e4510150b9e4373f80ae3e653ff2d9db&)
 
 Or if you already have [Git](https://git-scm.com/downloads) installed, use this command in terminal:
