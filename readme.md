@@ -58,8 +58,6 @@ By pressing `U` Key, add Close Button to the list.
 
 ![screenshot6](https://cdn.discordapp.com/attachments/842094820867571762/1272261503331991623/image.png?ex=66ba555b&is=66b903db&hm=5ceb4699bc500adc9ed9f3ae8ec35dfe440c3ab8347960903ccc8e18e86a48a6&)
 
-Press `G` to Stop the Program
-
 Now when you're done, check the `pixelCounter` program. You should see something like This:
 
 ![screenshot7](https://cdn.discordapp.com/attachments/842094820867571762/1272263553801523333/image.png?ex=66ba5744&is=66b905c4&hm=a831c417834b72e3bf0b153ef3e02e781ad7eb5d17142490519ebfafa6703858&)
