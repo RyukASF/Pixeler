@@ -87,7 +87,7 @@ y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 
 # ----------------------------------------------------------------------------------------------------------------------
 ```
 
-**Replace the Values in Code with Your Values from pixelCounter Program**
+**Replace the Values in Code with Your Values from pixelCounter Program And Save The Code** 
 
 ## Use
 
