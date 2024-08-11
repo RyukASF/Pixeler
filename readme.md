@@ -21,9 +21,9 @@ git clone https://github.com/RyukASF/Pixeler
 
 Inside the Pixeler Folder, run `pixelCounter.bat`
 
-_using this program we will get the information about coordinates ingame and install necessary libraries_
+by using this program we will get the information about coordinates ingame and install necessary libraries_
 
-When you run the program, first it is going to start installing library.
+When you run the program, first it is going to start installing libraries.
 
 after it finishes you will see This:
 
