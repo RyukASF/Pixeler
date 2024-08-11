@@ -26,6 +26,7 @@ When you run the program, first it is going to start installing librarie.
 
 after it finishes you will see This:
 ![screenshot2](https://cdn.discordapp.com/attachments/842094820867571762/1272253443532132482/image.png?ex=66ba4dda&is=66b8fc5a&hm=976b898c5eec25a30eff24c8e8b9aa02232efb998446cbbb3c1e394b993f9226&)
+
 Go into Starving Artists game and open Drawing Panel.
 
 By pressing `F` Key, you will add your current mouse position as one of the pixels from drawing panel in Starving Artists.
@@ -33,6 +34,7 @@ One by one, You have to point your mouse to pixel on the grid and hit `F`, after
 
 Here is how you should do it:
 ![screenshot3](https://cdn.discordapp.com/attachments/842094820867571762/1272257428079120405/RobloxScreenShot20240809_024936282.png?ex=66ba5190&is=66b90010&hm=de752fbddb8c7e62df1e6c2f5bf927aa25399163bef76be7a19ed57366574bb7&)
+
 **First** you go from Left to Right adding all 32 pixels on the list.
 
 **Then** you go from Top to Bottom adding all 32 pixels on the list.
@@ -52,9 +54,11 @@ By pressing `U` Key, add Close Button to the list.
 
 Now when you're done, check the `pixelCounter` program. You should see something like This:
 ![screenshot7](https://cdn.discordapp.com/attachments/842094820867571762/1272263553801523333/image.png?ex=66ba5744&is=66b905c4&hm=a831c417834b72e3bf0b153ef3e02e781ad7eb5d17142490519ebfafa6703858&)
+
 _DO NOT CLOSE THE PROGRAM YET_
 
 Next, inside Pixeler Folder, go in python Folder and open pixeler.py by using Any Text Editor (I recommend using [Visual Stuido Code](https://code.visualstudio.com))
+
 ![screenshot8](https://cdn.discordapp.com/attachments/842094820867571762/1272265287630061670/Screenshot_3.png?ex=66ba58e2&is=66b90762&hm=2625949fe2a44646e20bf0629a3bf60f0679e14db4e6364782673c020af837e1&)
 
 Inside the Code Look for This Code:
@@ -82,6 +86,7 @@ y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 
 
 inside Pixeler Folder, run pixeler.bat file
 ![screenshot9](https://cdn.discordapp.com/attachments/842094820867571762/1272267262933598268/image.png?ex=66ba5ab9&is=66b90939&hm=6c5d6fedc0311b25be3b3a349f99d9d4403ababc466406efccbb8734dcb36ba0&)
+
 Enter your average Roblox FPS there and hit enter. (this is to make sure that program functions based on your pc's capabilities)
 
 After This pops uo you're ready to go
