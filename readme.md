@@ -9,7 +9,7 @@ First, You need to have [Python](https://www.python.org) Installed, Download it 
 Downlaod .Zip file from GitHub, or from [Here](https://github.com/RyukASF/Pixeler/archive/refs/heads/main.zip)
 and extract it.
 
-![screenshot1]([https://drive.google.com/file/d/15EBHHcGWlI_FMrrpe-EjACZ4jmcLmbBW/view?usp=sharing))
+![image](https://github.com/user-attachments/assets/dfa8a6cc-aacb-4654-bb25-e0814613261d)
 
 Or if you already have [Git](https://git-scm.com/downloads) installed, use this command in terminal:
 
@@ -27,7 +27,7 @@ When you run the program, first it is going to start installing libraries.
 
 after it finishes you will see This:
 
-![screenshot2]([https://drive.google.com/file/d/1miIfknPfNUcbkQb8JmnLaoInAs3Ju7N9/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![image2](https://github.com/user-attachments/assets/ed3d4082-b066-4a11-8ac2-a41446e1d77e)
 
 Go into Starving Artists game and open Drawing Panel.
 
@@ -36,7 +36,7 @@ One by one, You have to point your mouse to pixel on the grid and hit `F`, after
 
 Here is how you should do it:
 
-![screenshot3]([https://drive.google.com/file/d/1ndNBZlQM8PeGP2gQ/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![RobloxScreenShot20240809_024936282](https://github.com/user-attachments/assets/fa5e4cdf-57aa-4f1d-b2b6-a18777138f51)
 
 **First** you go from Left to Right adding all 32 pixels on the list.
 
@@ -48,25 +48,25 @@ When you're done you should hear _ding_ sound.
 
 After that, By pressing `T` Key, add Color Selector Button do the list.
 
-![screenshot4]([https://drive.google.com/file/d/1_8d6JEbkGoZF6D5DvpdPwpKd9QDr5Kp/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![RobloxScreeddnShot20240809_024936282](https://github.com/user-attachments/assets/04bb4299-355e-4d8b-a969-a38b968626d9)
 
 By pressing `Y` Key, add Input area to the list.
 
-![screnshot5]([https://drive.google.com/file/d/1bdvjVuV53iSg8pdo4U1zvX4uAkK00yb3/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![imag3e](https://github.com/user-attachments/assets/21321ce9-c9a8-400e-814a-4ef97cb85c89)
 
 By pressing `U` Key, add Close Button to the list.
 
-![screenshot6]([https://drive.google.com/file/d/1H7vRl0cmAp16F8IMKcyxM0e1wwwc1dhl/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![imag2e](https://github.com/user-attachments/assets/da16f7f1-3e3b-4bb9-8f13-6490fc837bc0)
 
 Now when you're done, check the `pixelCounter` program. You should see something like This:
 
-![screenshot7]([https://drive.google.com/file/d/1fIFQWcyjb7OF3Us1962Bj7DKJanAwG2/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![imag4e](https://github.com/user-attachments/assets/51a62b1c-bdd0-4d77-bbb8-b99dad6f3087)
 
 _DO NOT CLOSE THE PROGRAM YET_
 
 Next, inside Pixeler Folder, go in python Folder and open pixeler.py by using Any Text Editor (I recommend using [Visual Stuido Code](https://code.visualstudio.com))
 
-![screenshot8]([https://drive.google.com/file/d/1lrQDf9uNLfG1368AxLtJlHAHrhLSenyP/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![Screenshot_3](https://github.com/user-attachments/assets/adc8ce53-b3c3-45ac-84ac-3fd6406666d9)
 
 Inside the Code Look for This Code:
 
@@ -93,13 +93,13 @@ y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 
 
 inside Pixeler Folder, run pixeler.bat file
 
-![screenshot9]([https://drive.google.com/file/d/1uZdh8OJ_web4fvYJJLn8OULyR8BcIDqI/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![ima5ge](https://github.com/user-attachments/assets/f3ad7c57-15e9-4845-a4e0-d7ef9a74e4bc)
 
 Enter your average Roblox FPS there and hit enter. (this is to make sure that program functions based on your pc's capabilities)
 
 After This pops up you're ready to go
 
-![screenshot10]([https://drive.google.com/file/d/15EBHHcGWlI_FMrrpe-EjACZ4jmcLmbBW/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![imag11e](https://github.com/user-attachments/assets/f33ed3c7-2ec8-4fe2-bea0-935515b5fe72)
 
 Press `H` to Select Image you want to draw
 
