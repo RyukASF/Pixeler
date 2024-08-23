@@ -9,7 +9,7 @@ First, You need to have [Python](https://www.python.org) Installed, Download it 
 Downlaod .Zip file from GitHub, or from [Here](https://github.com/RyukASF/Pixeler/archive/refs/heads/main.zip)
 and extract it.
 
-![screenshot1]([https://drive.google.com/file/d/1imKV0_o2TjuvE7XRGOZE3tujLoh9PlnT/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
+![screenshot1]([https://drive.google.com/file/d/15EBHHcGWlI_FMrrpe-EjACZ4jmcLmbBW/view?usp=sharing))
 
 Or if you already have [Git](https://git-scm.com/downloads) installed, use this command in terminal:
 
