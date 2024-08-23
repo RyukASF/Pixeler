@@ -9,7 +9,7 @@ First, You need to have [Python](https://www.python.org) Installed, Download it 
 Downlaod .Zip file from GitHub, or from [Here](https://github.com/RyukASF/Pixeler/archive/refs/heads/main.zip)
 and extract it.
 
-![screenshot1](https://drive.google.com/file/d/1imKV0_o2TjuvE7XRGOZE3tujLoh9PlnT/view)
+![screenshot1]([https://drive.google.com/file/d/1imKV0_o2TjuvE7XRGOZE3tujLoh9PlnT/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 Or if you already have [Git](https://git-scm.com/downloads) installed, use this command in terminal:
 
@@ -27,7 +27,7 @@ When you run the program, first it is going to start installing libraries.
 
 after it finishes you will see This:
 
-![screenshot2](https://drive.google.com/file/d/1miIfknPfNUcbkQb8JmnLaoInAs3Ju7N9/view)
+![screenshot2]([https://drive.google.com/file/d/1miIfknPfNUcbkQb8JmnLaoInAs3Ju7N9/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 Go into Starving Artists game and open Drawing Panel.
 
@@ -36,7 +36,7 @@ One by one, You have to point your mouse to pixel on the grid and hit `F`, after
 
 Here is how you should do it:
 
-![screenshot3](https://drive.google.com/file/d/1ndNBZlQM8PeGP2gQ-UZbHsUVKzZ3o3iH/view)
+![screenshot3]([https://drive.google.com/file/d/1ndNBZlQM8PeGP2gQ/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 **First** you go from Left to Right adding all 32 pixels on the list.
 
@@ -48,25 +48,25 @@ When you're done you should hear _ding_ sound.
 
 After that, By pressing `T` Key, add Color Selector Button do the list.
 
-![screenshot4](https://drive.google.com/file/d/1_8d6JEbkGoZF6D5DvpdPwpKd9QDr5Kp-/view)
+![screenshot4]([https://drive.google.com/file/d/1_8d6JEbkGoZF6D5DvpdPwpKd9QDr5Kp/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 By pressing `Y` Key, add Input area to the list.
 
-![screnshot5](https://drive.google.com/file/d/1bdvjVuV53iSg8pdo4U1zvX4uAkK00yb3/view)
+![screnshot5]([https://drive.google.com/file/d/1bdvjVuV53iSg8pdo4U1zvX4uAkK00yb3/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 By pressing `U` Key, add Close Button to the list.
 
-![screenshot6](https://drive.google.com/file/d/1H7vRl0cmAp16F8IMKcyxM0e1wwwc1dhl/view)
+![screenshot6]([https://drive.google.com/file/d/1H7vRl0cmAp16F8IMKcyxM0e1wwwc1dhl/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 Now when you're done, check the `pixelCounter` program. You should see something like This:
 
-![screenshot7](https://drive.google.com/file/d/1fIFQWcyjb7OF3Us1962Bj7DKJanAwG2-/view)
+![screenshot7]([https://drive.google.com/file/d/1fIFQWcyjb7OF3Us1962Bj7DKJanAwG2/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 _DO NOT CLOSE THE PROGRAM YET_
 
 Next, inside Pixeler Folder, go in python Folder and open pixeler.py by using Any Text Editor (I recommend using [Visual Stuido Code](https://code.visualstudio.com))
 
-![screenshot8](https://drive.google.com/file/d/1lrQDf9uNLfG1368AxLtJlHAHrhLSenyP/view)
+![screenshot8]([https://drive.google.com/file/d/1lrQDf9uNLfG1368AxLtJlHAHrhLSenyP/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 Inside the Code Look for This Code:
 
@@ -93,13 +93,13 @@ y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 
 
 inside Pixeler Folder, run pixeler.bat file
 
-![screenshot9](https://drive.google.com/file/d/1uZdh8OJ_web4fvYJJLn8OULyR8BcIDqI/view)
+![screenshot9]([https://drive.google.com/file/d/1uZdh8OJ_web4fvYJJLn8OULyR8BcIDqI/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 Enter your average Roblox FPS there and hit enter. (this is to make sure that program functions based on your pc's capabilities)
 
 After This pops up you're ready to go
 
-![screenshot10](https://drive.google.com/file/d/15EBHHcGWlI_FMrrpe-EjACZ4jmcLmbBW/view)
+![screenshot10]([https://drive.google.com/file/d/15EBHHcGWlI_FMrrpe-EjACZ4jmcLmbBW/view](https://drive.google.com/file/d/File_ID/view?usp=sharing))
 
 Press `H` to Select Image you want to draw
 
