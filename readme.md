@@ -64,7 +64,7 @@ Now when you're done, check the `pixelCounter` program. You should see something
 
 _DO NOT CLOSE THE PROGRAM YET_
 
-Next, inside Pixeler Folder, go in python Folder and open pixeler.py by using Any Text Editor (I recommend using [Visual Stuido Code](https://code.visualstudio.com))
+Next, inside Pixeler Folder, go in python Folder and open `pixeler.py` by using **Any Text Editor** (I recommend using [Visual Stuido Code](https://code.visualstudio.com))
 
 ![Screenshot_3](https://github.com/user-attachments/assets/adc8ce53-b3c3-45ac-84ac-3fd6406666d9)
 
@@ -91,7 +91,7 @@ y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 
 
 ## Use
 
-inside Pixeler Folder, run pixeler.bat file
+inside Pixeler Folder, run `pixeler.bat` file
 
 ![ima5ge](https://github.com/user-attachments/assets/f3ad7c57-15e9-4845-a4e0-d7ef9a74e4bc)
 
