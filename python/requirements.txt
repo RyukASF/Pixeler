@@ -1,0 +1,9 @@
+pyqt5
+pillow
+screeninfo
+pywin32
+keyboard
+pyautoit
+pyautogui
+playsound
+ttkthemes
