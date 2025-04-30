@@ -49,7 +49,7 @@ def calculate_f_sleep_time(drawSpeed):
         return None
 
 
-def goTo(x, y, keyPerm, ConstandPress):
+def goTo(x, y, keyPerm, ConstandPress):  # TODO Rewrite Input System With Win32 API
     x+5
     y+5
     d = 0
@@ -91,7 +91,7 @@ def goTo(x, y, keyPerm, ConstandPress):
     # time.sleep(f_sleep_time)
 
 
-def select_color():
+def select_color():  # TODO If Previous Color And New One Are The Same, Make A Bypass Feature For More Speed
     global pIndex
     global canItRun
 
