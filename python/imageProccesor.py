@@ -15,8 +15,8 @@ import io
 pixels = []
 
 
-def getpixels(index):
-    return pixels[index]
+def getpixels():
+    return pixels
 
 
 def getDominantColor(image):

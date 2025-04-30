@@ -13,13 +13,27 @@ import playsound
 
 from imageProccesor import getpixels
 
-x = []
-y = []
+# Set Button coordinates //CHANGE THIS COORDINATES WITH YOUR COORDINATES (By using PixelCounter.py)
+colorCord = 1093, 863  # Colour Select Button
+# colorCord = 777, 611  # Colour Select Button
+inputCord = 1087, 761  # Input Text Area
+# inputCord = 773, 542  # Input Text Area
+closeCord = 1345, 471  # Close Button
+# closeCord = 957, 333  # Close Button
 
-cY = 0
-cX = 0
-clY = 0
-clX = 0
+# Set x and y coordinates //CHANGE THIS COORDINATES WITH YOUR COORDINATES (By using PixelCounter.py)
+x = [646, 663, 686, 704, 723, 748, 765, 788, 804, 829, 845, 868, 889, 908, 931, 951, 969,
+     985, 1012, 1031, 1051, 1074, 1091, 1113, 1134, 1154, 1173, 1193, 1214, 1235, 1255, 1273]
+y = [165, 186, 204, 225, 245, 263, 282, 305, 327, 344, 364, 385, 405, 428, 444, 470,
+     489, 509, 529, 552, 572, 586, 607, 632, 648, 669, 688, 710, 732, 755, 769, 793]
+
+cY, cX = colorCord
+iY, iX = inputCord
+clY, clX = closeCord
+
+f_sleep_time = 0
+
+pixels = []
 
 
 def calculate_f_sleep_time(drawSpeed):
@@ -35,19 +49,46 @@ def calculate_f_sleep_time(drawSpeed):
         return None
 
 
-def goTo(x, y, d, f):
+def goTo(x, y, keyPerm, ConstandPress):
     x+5
     y+5
     d = 0
-    s = 0
+    # s = 0
 
-    for i in range(5):
-        autoit.mouse_move(x-i, y-i, d)
-        time.sleep(f_sleep_time)
-        if f == True:
-            autoit.mouse_click()
-        elif i == 3:
-            autoit.mouse_click()
+    if keyPerm == True:
+
+        for i in range(6):
+            # time.sleep(f_sleep_time)
+            keyboard.press("a")
+
+            autoit.mouse_move(x-i, y-i, d)
+
+            if ConstandPress == True:
+                # time.sleep(f_sleep_time)
+                autoit.mouse_click()
+                if i >= 3:
+                    break
+            if i == 5:
+                time.sleep(f_sleep_time)
+                keyboard.press("d")
+                autoit.mouse_click()
+                keyboard.release("d")
+            keyboard.release("a")
+
+    else:
+        for i in range(6):
+            autoit.mouse_move(x-i, y-i, d)
+
+            if ConstandPress == True:
+                # time.sleep(f_sleep_time)
+                autoit.mouse_click()
+                if i >= 3:
+                    break
+            if i == 5:
+                time.sleep(f_sleep_time)
+                autoit.mouse_click()
+
+    # time.sleep(f_sleep_time)
 
 
 def select_color():
@@ -58,14 +99,16 @@ def select_color():
         canItRun = False
         playsound("audio.ding.mp3")
     else:
-        goTo(cY, cX, 0, False)
+        goTo(cY, cX, True, False)
 
-        keyboard.write(getpixels(pIndex))
+        goTo(iY, iX, True, False)
+
+        keyboard.write(pixels[pIndex])
 
         pIndex += 1
 
-        goTo(clY, clX, 0, False)
-        time.sleep(f_sleep_time)
+        goTo(clY, clX, False, False)
+        # time.sleep(f_sleep_time)
     # print("color select?")
 
 
@@ -94,12 +137,14 @@ def startDrawing(drawSpeed):
             # print("ies")
             print("Start Drawing Initialized")
             try:
+                global pixels
+                pixels = getpixels()
                 for j in range(len(y)):
                     for i in range(len(x)):
+                        start = time.time()
                         if canItRun:
                             # Select color
                             select_color()
-
                             # Perform mouse clicks with error handling
                             try:
                                 # Move to position and click multiple times for reliability
@@ -112,7 +157,8 @@ def startDrawing(drawSpeed):
                             if keyboard.is_pressed("p"):
                                 stopDrawing()
                                 break
-
+                        end = time.time()
+                        print(f"Pixel Drawn in {end - start} Second")
                         print(f"Processed coordinate: ({x[i]}, {y[j]})")
 
                 print("Drawing completed successfully")
