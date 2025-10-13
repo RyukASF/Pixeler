@@ -33,6 +33,7 @@ cY, cX = colorCord
 iY, iX = inputCord
 clY, clX = closeCord
 
+current_color = ""
 
 # This Functions makes sure that it can run smooth without any problems based on Your FPS
 def calculate_f_sleep_time(fps):
@@ -85,33 +86,41 @@ def select_color():
         canItRun = False
         playsound("audio.ding.mp3")
     else:
-        autoit.mouse_move(cY, cX, 0)
-        time.sleep(f_sleep_time)
-        autoit.mouse_move(cY+1, cX+1, 0)
-        time.sleep(0.005)
-        autoit.mouse_move(cY-1, cX-1, 0)
-        time.sleep(f_sleep_time)
-        autoit.mouse_click()
-
-        autoit.mouse_move(iY, iX, 0)
-        time.sleep(f_sleep_time)
-        autoit.mouse_move(iY+1, iX+1, 0)
-        time.sleep(0.005)
-        autoit.mouse_move(iY-1, iX-1, 0)
-        time.sleep(f_sleep_time)
-        autoit.mouse_click()
-
-        keyboard.write(pixels[pIndex])
-
+        pick_color(pixels[pIndex])
         pIndex += 1
 
-        autoit.mouse_move(clY, clX, 0)
-        time.sleep(f_sleep_time)
-        autoit.mouse_move(clY+1, clX+1, 0)
-        time.sleep(0.005)
-        autoit.mouse_move(clY-1, clX-1, 0)
-        time.sleep(f_sleep_time)
-        autoit.mouse_click()
+def pick_color(color: str) -> None:
+    global current_color
+
+    if(color == current_color):
+        return
+
+    autoit.mouse_move(cY, cX, 0)
+    time.sleep(f_sleep_time)
+    autoit.mouse_move(cY+1, cX+1, 0)
+    time.sleep(0.005)
+    autoit.mouse_move(cY-1, cX-1, 0)
+    time.sleep(f_sleep_time)
+    autoit.mouse_click()
+
+    autoit.mouse_move(iY, iX, 0)
+    time.sleep(f_sleep_time)
+    autoit.mouse_move(iY+1, iX+1, 0)
+    time.sleep(0.005)
+    autoit.mouse_move(iY-1, iX-1, 0)
+    time.sleep(f_sleep_time)
+    autoit.mouse_click()
+
+    current_color = pixels[pIndex]
+    keyboard.write(current_color)
+
+    autoit.mouse_move(clY, clX, 0)
+    time.sleep(f_sleep_time)
+    autoit.mouse_move(clY+1, clX+1, 0)
+    time.sleep(0.005)
+    autoit.mouse_move(clY-1, clX-1, 0)
+    time.sleep(f_sleep_time)
+    autoit.mouse_click()
 
 
 def on_press():
